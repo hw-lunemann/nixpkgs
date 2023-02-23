@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/MullvadVPN-${version}_amd64.deb";
-    sha256 = "sha256-G3B4kb+ugukYtCVH3HHI43u3n9G0dX6WyYUA3X/sZ+o=";
+    hash = "sha256-G3B4kb+ugukYtCVH3HHI43u3n9G0dX6WyYUA3X/sZ+o=";
   };
 
   nativeBuildInputs = [
