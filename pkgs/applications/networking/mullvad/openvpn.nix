@@ -22,7 +22,7 @@ openvpn.overrideAttrs (oldAttrs:
 
     src = fetchurl {
       url = "https://swupdate.openvpn.net/community/releases/openvpn-${version}.tar.gz";
-      sha256 = "sha256-6+yTMmPJhQ72984SXi8iIUvmCxy7jM/xiJJkP+CDro8=";
+      hash = "sha256-6+yTMmPJhQ72984SXi8iIUvmCxy7jM/xiJJkP+CDro8=";
     };
 
     buildInputs = oldAttrs.buildInputs or [ ] ++ [
